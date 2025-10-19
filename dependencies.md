@@ -134,6 +134,7 @@ This document shows the relationships between GitHub Actions workflows and their
 ### 2D or 3D Selenium Fullscreen Test (`dimension_test.yml`)
 **Manual trigger available**
 **Required Scripts:**
+- `.github/scripts/dimension_media_fetcher.py`
 - `.github/scripts/selenium_fullscreen_test2D.py`
 - `.github/scripts/selenium_fullscreen_test3D.py`
 
@@ -284,6 +285,10 @@ This section shows which workflows use each script:
 **Used in Workflows:**
 - `daily.yml`
 - `test_daily.yml`
+
+### dimension_media_fetcher.py
+**Used in Workflows:**
+- `dimension_test.yml`
 
 ### finetune_model.py
 **Used in Workflows:**
