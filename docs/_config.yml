@@ -1,0 +1,11 @@
+title: NOCTURN X-ray Release Information
+description: Displaying information about the latest data releases for the NOCTURN X-ray project
+theme: jekyll-theme-cayman
+
+# GitHub Pages settings
+github:
+  is_project_page: true
+  repository_url: https://github.com/johntrue15/NOCTURN-X-ray-repo
+
+# Enable debugging info
+verbose: true
