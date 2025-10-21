@@ -21,22 +21,22 @@ This document shows the relationships between GitHub Actions workflows and their
 
 ---
 
-### Daily MorphoSource Check (`daily.yml`)
-
-**Schedule:** Daily at midnight
-
-**Required Scripts:**
-- `.github/scripts/daily.py`
-
-
----
-
 ### Release Reactions Collector (`release-reactions.yml`)
 
 **Schedule:** Daily at midnight
 
 **Required Scripts:**
 - `.github/scripts/collect_reactions.py`
+
+
+---
+
+### Daily MorphoSource Check (`daily.yml`)
+
+**Schedule:** Daily at midnight
+
+**Required Scripts:**
+- `.github/scripts/daily.py`
 
 
 ---
@@ -131,12 +131,12 @@ This document shows the relationships between GitHub Actions workflows and their
 
 ### Deploy GitHub Pages (`deploy-pages.yml`)
 
-### 2D or 3D Selenium Fullscreen Test (`dimension_test.yml`)
+### 2D or 3D Media Analysis (`dimension_test.yml`)
 **Manual trigger available**
 **Required Scripts:**
 - `.github/scripts/dimension_media_fetcher.py`
-- `.github/scripts/selenium_fullscreen_test2D.py`
-- `.github/scripts/selenium_fullscreen_test3D.py`
+- `.github/scripts/iiif_manifest_viewer.py`
+- `.github/scripts/mesh_analysis.py`
 
 ### Issue Workflow Dependency Check (`issue-dependency-check.yml`)
 
@@ -298,6 +298,14 @@ This section shows which workflows use each script:
 **Used in Workflows:**
 - `Claude_issue_automation.yml`
 
+### iiif_manifest_viewer.py
+**Used in Workflows:**
+- `dimension_test.yml`
+
+### mesh_analysis.py
+**Used in Workflows:**
+- `dimension_test.yml`
+
 ### metadata_record_extract.py
 **Used in Workflows:**
 - `metadata_record_extract.yml`
@@ -342,14 +350,6 @@ This section shows which workflows use each script:
 ### scrape_morphosource.py
 **Used in Workflows:**
 - `parse_morphosource.yml`
-
-### selenium_fullscreen_test2D.py
-**Used in Workflows:**
-- `dimension_test.yml`
-
-### selenium_fullscreen_test3D.py
-**Used in Workflows:**
-- `dimension_test.yml`
 
 ### test_3D_screenshot.py
 **Used in Workflows:**

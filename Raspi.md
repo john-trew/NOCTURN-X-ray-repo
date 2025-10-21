@@ -224,10 +224,13 @@ Tests the daily check and collection process.
 - `.github/scripts/daily.py` - Used for testing daily checks
 
 #### Dimension Test (`dimension_test.yml`)
-Tests data dimensions and integrity.
+Performs IIIF rendering for 2D records and trimesh-based analysis for 3D media to
+validate downloads without relying on proprietary browsers.
 
 **Associated Scripts:**
-- `.github/scripts/dimension_test.py` - Validates data dimensions
+- `.github/scripts/dimension_media_fetcher.py` - Selects media and downloads manifests/assets
+- `.github/scripts/iiif_manifest_viewer.py` - Renders a PNG preview from the IIIF manifest
+- `.github/scripts/mesh_analysis.py` - Computes mesh metrics using trimesh
 
 ## Directory Structure
 
