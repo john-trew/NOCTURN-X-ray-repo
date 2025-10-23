@@ -138,6 +138,11 @@ This document shows the relationships between GitHub Actions workflows and their
 - `.github/scripts/iiif_manifest_viewer.py`
 - `.github/scripts/mesh_analysis.py`
 
+### Fetch MorphoSource media (by ID) (`fetch_morphosource_media.yml`)
+**Manual trigger available**
+**Required Scripts:**
+- `.github/scripts/fetch_morphosource_media.py`
+
 ### Issue Workflow Dependency Check (`issue-dependency-check.yml`)
 
 ### Metadata Record Extractor (`metadata_record_extract.yml`)
@@ -289,6 +294,10 @@ This section shows which workflows use each script:
 ### dimension_media_fetcher.py
 **Used in Workflows:**
 - `dimension_test.yml`
+
+### fetch_morphosource_media.py
+**Used in Workflows:**
+- `fetch_morphosource_media.yml`
 
 ### finetune_model.py
 **Used in Workflows:**
