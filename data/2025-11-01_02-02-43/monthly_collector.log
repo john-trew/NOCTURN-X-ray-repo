@@ -1,0 +1,9 @@
+2025-11-01 02:02:43,915 - INFO - Initialized collector with output directory: data/2025-11-01_02-02-43
+2025-11-01 02:02:43,915 - INFO - Processing page 1 via API
+2025-11-01 02:02:44,698 - INFO - Analysis complete:
+2025-11-01 02:02:44,698 - INFO - - Existing records: 0
+2025-11-01 02:02:44,698 - INFO - - New records: 0
+2025-11-01 02:02:44,699 - INFO - - Modified records: 0
+2025-11-01 02:02:44,699 - INFO - - Removed records: 0
+2025-11-01 02:02:44,699 - ERROR - Error saving data: No records to save - aborting to prevent data loss
+2025-11-01 02:02:44,699 - ERROR - Error in monthly collection: No records to save - aborting to prevent data loss
